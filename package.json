@@ -5,6 +5,8 @@
     "main": "src/index.js",
     "scripts": {
         "start": "nodemon --exec babel-node src/index.js",
+        "db-start": "pg_ctl -D /usr/local/var/postgres start",
+        "db-stop": "pg_ctl -D /usr/local/var/postgres stop",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Jen Lipton",
@@ -18,6 +20,8 @@
         "express": "^4.17.1",
         "graphql": "^14.5.8",
         "nodemon": "^1.19.4",
+        "pg": "^7.12.1",
+        "sequelize": "^5.21.2",
         "uuid": "^3.3.3"
     },
     "devDependencies": {

@@ -7,6 +7,7 @@
         "start": "nodemon --exec babel-node src/index.js",
         "db-start": "pg_ctl -D /usr/local/var/postgres start",
         "db-stop": "pg_ctl -D /usr/local/var/postgres stop",
+        "debug": "nodemon --inspect --exec babel-node src/index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Jen Lipton",
@@ -15,14 +16,14 @@
         "apollo-server": "^2.9.9",
         "apollo-server-express": "^2.9.9",
         "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
         "eslint-config-airbnb-base": "^14.0.0",
         "eslint-plugin-import": "^2.18.2",
         "express": "^4.17.1",
         "graphql": "^14.5.8",
         "nodemon": "^1.19.4",
         "pg": "^7.12.1",
-        "sequelize": "^5.21.2",
-        "uuid": "^3.3.3"
+        "sequelize": "^5.21.2"
     },
     "devDependencies": {
         "@babel/core": "^7.7.2",

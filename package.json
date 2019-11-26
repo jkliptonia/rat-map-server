@@ -1,5 +1,5 @@
 {
-    "name": "rat-map-server",
+    "name": "ratmap-server",
     "version": "1.0.0",
     "description": "Server for rat map, built with Express and Apollo",
     "main": "src/index.js",
